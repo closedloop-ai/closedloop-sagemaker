@@ -1,0 +1,214 @@
+{
+       "_derivedType": "JsonDataFrame",
+       "schema": [
+          {
+             "_derivedType": "SchemaField",
+             "name": "personId",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "prediction",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "risk_score",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "integer",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "pos_factors",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "pos_shap_scores",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "pos_patient_values",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "neg_factors",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "neg_shap_scores",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "neg_patient_values",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "neg_shap_scores_w",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "pos_shap_scores_w",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "pos_shap_percentile",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          },
+          {
+             "_derivedType": "SchemaField",
+             "name": "neg_shap_percentile",
+             "dataType": {
+                "_derivedType": "CLDataType",
+                "dataType": "object",
+                "metadata": {}
+             }
+          }
+       ],
+       "dataSnapshot": 1,
+       "data": [
+          {
+             "personId": "0001954dce0672cf",
+             "prediction": 0.107,
+             "risk_score": 31,
+             "pos_factors": [
+                "age",
+                "diagnosis_CCS_7_2"
+             ],
+             "pos_shap_scores": [
+                0.217,
+                0.093
+             ],
+             "pos_patient_values": [
+                84,
+                1
+             ],
+             "neg_factors": [
+                "previous_cost_P-3M_to_P0D",
+                "inpatient_days",
+                "admit_count",
+                "ed_visit_count",
+                "diagnosis_CCS_8_2",
+                "previous_cost_P-6M_to_P-3M",
+                "previous_cost_P-1Y_to_P-9M",
+                "office_visit_count",
+                "diagnosis_CCS_3_3",
+                "diagnosis_CCS_10_1"
+             ],
+             "neg_shap_scores": [
+                -0.326,
+                -0.229,
+                -0.131,
+                -0.079,
+                -0.06,
+                -0.04,
+                -0.031,
+                -0.03,
+                -0.027,
+                -0.022
+             ],
+             "neg_patient_values": [
+                24.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                null,
+                null,
+                1.0,
+                0.0,
+                0.0
+             ],
+             "neg_shap_scores_w": [
+                -0.767,
+                -0.539,
+                -0.308,
+                -0.186,
+                -0.141,
+                -0.094,
+                -0.073,
+                -0.071,
+                -0.064,
+                -0.052
+             ],
+             "pos_shap_scores_w": [
+                0.511,
+                0.219
+             ],
+             "pos_shap_percentile": [
+                85,
+                65
+             ],
+             "neg_shap_percentile": [
+                97,
+                87,
+                73,
+                59,
+                47,
+                30,
+                20,
+                19,
+                14,
+                3
+             ]
+          }
+       ],
+       "idFields": [
+          "personId"
+       ]
+    }
+
